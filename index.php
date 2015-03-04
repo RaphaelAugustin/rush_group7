@@ -9,10 +9,10 @@ session_start();
 
 
 //connect to database
-    $PDO =new PDO('mysql:host=localhost;dbname=mydb', 'root', '',[
+    $PDO =new PDO('mysql:host=localhost;dbname=mydb', 'root', ' ',[
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     ]);
-    $user = new Users($PDO);
+  //  $user = new Users($PDO);
 
 
     $routing = [
@@ -63,42 +63,41 @@ session_start();
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.png" alt="Logo de noxDuck" class="img-responsive logo"/>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-01">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="?action=home">Accueil</a></li>
+                <li><a href="?action=home#description">Description</a></li>
+                <li><a href="?action=payment">Achat</a></li>
+                <li><a href="?action=home">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="?action=login"><button>Connexion</button></a></li>
+                <li><a href="?action=subscription"><button>Inscription</button></a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav><!-- /navbar -->
 
-<nav class="navbar navbar-inverse" role="navigation">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
-            <span class="sr-only">Toggle navigation</span>
-        </button>
-        <a class="navbar-brand" href="#">
-            <img src="assets/img/logo.png" alt="Logo de noxDuck" class="img-responsive logo"/>
-        </a>
-    </div>
-    <div class="collapse navbar-collapse" id="navbar-collapse-01">
-        <ul class="nav navbar-nav navbar-left">
-            <li><a href="?action=home">Accueil</a></li>
-            <li><a href="?action=home">Description</a></li>
-            <li><a href="?action=payment">Achat</a></li>
-            <li><a href="?action=home">Contact</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="?action=login"><button>Connexion</button></a></li>
-            <li><a href="?action=registration"><button>Inscription</button></a></li>
-        </ul>
-    </div><!-- /.navbar-collapse -->
-</nav><!-- /navbar -->
+    <nav class="navigation">
+        <span class="text-left">Service client <span class="XXXX">GRATUIT</span> 000 000 000</span>
+    </nav>
 
-<nav class="navigation">
-    <span class="text-left">Service client <span class="XXXX">GRATUIT</span> 000 000 000</span>
-</nav>
-
-<?php
-    require_once('view/'.$action.'.php');
-?>
+    <?php
+        require_once('view/'.$action.'.php');
+    ?>
 
 
-<footer>
-    <a href="">mode de paiement</a> - <a href="">mode de livraison</a> - <a href="">qualité de services certifiés</a> - <a href="">contact</a> - <a href="">newsletters</a>
-</footer>
+    <footer>
+        <a href="">mode de paiement</a> - <a href="">mode de livraison</a> - <a href="">qualité de services certifiés</a> - <a href="">contact</a> - <a href="">newsletters</a>
+    </footer>
 
 <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
 <script src="assets/js/vendor/jquery.min.js"></script>

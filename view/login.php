@@ -1,22 +1,23 @@
-
-<h1>Connectez-vous</h1>
-<form class="form-message" method="POST" action="">
-    <label for="pseudo">Entrer votre Pseudo</label>
-    <input type="text" id="pseudo" name="pseudo"/><br>
-
-    <label for="password">Entrer votre mot de passe</label>
-    <input type="password" id="password" name="password"/><br>
-
-    <input type="submit" value="Se connecter"/>
-
-</form>
-
+<div class="col-xs-offset-2 col-xs-8 col-sm-offset-3 col-sm-6 col-lg-offset-4 col-lg-4 text-center login">
+    <h2>Connectez-vous</h2>
+    <form method="POST" class="form-message">
+        <div class="form-group">
+            <input class="form-control login-field" value="" placeholder="Adresse e-mail" type="email">
+        </div>
+        <div class="form-group">
+            <input class="form-control login-field" value="" placeholder="Password" type="password">
+        </div>
+        <a class="btn btn-primary btn-block" href="#">Connexion</a>
+        <a class="login-link" href="#">Vous n'avez pas de compte ? Connectez-vous</a>
+    </form>
 <?php
-// verify if $_POST variable exist
-if (isset($_POST['pseudo'], $_POST['password']) && !empty($_POST['pseudo']) && !empty($_POST['password'])) {
-    $user->connect_user($_POST['pseudo'], $_POST['password']);
-} else {
-    echo 'Veuillez entrer un pseudo et un mot de passe.';
-}
+    // verify if $_POST variable exist
+    if (isset($_POST['pseudo'], $_POST['password']) && !empty($_POST['pseudo']) && !empty($_POST['password'])) {
+        $user->connect_user($_POST['pseudo'], $_POST['password']);
+    } else {
+        echo 'Veuillez entrer un pseudo et un mot de passe.';
+    }
 
 ?>
+
+</div>

@@ -51,13 +51,22 @@ body {
     padding: 0;
     position:relative;
 }
-.container {
+.concept {
     max-width:520px;
     width:100%;
     margin:100px auto;
     padding: 25px 50px;
     background-color: rgba(0, 0, 0, 0.5);
     color: #FFF;
+    float:right;
+}
+
+.description {
+    max-width:520px;
+    width:100%;
+    margin:100px auto;
+    padding: 25px 50px;
+    color: black;
     float:right;
 }
 
@@ -73,7 +82,9 @@ body {
 }
 
 .login {
+    padding:38px 0;
     background:0;
+    color:black;
 }
 
 h1, h2, h3{
@@ -103,7 +114,9 @@ h1, h2, h3{
     background-color:#b84c56;
     border-bottom:3px solid #db5b67;
 }
-
+.checkbox input.custom-checkbox[type="checkbox"]:checked + .icons .icon-checked, .radio input.custom-checkbox[type="checkbox"]:checked + .icons .icon-checked, .checkbox input.custom-radio[type="radio"]:checked + .icons .icon-checked, .radio input.custom-radio[type="radio"]:checked + .icons .icon-checked {
+    color: #db5b67;
+}
 .form-group.focus .form-control, .form-control:focus, .form-group.focus .select2-search input[type="text"], .select2-search input[type="text"]:focus{
     border-color:#b84c56;
 }
