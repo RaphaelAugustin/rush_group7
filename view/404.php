@@ -1,1 +1,3 @@
-error 404
+<a href="http://www.google.com/">
+    <input type="button" value="Visit Google"/>
+</a>

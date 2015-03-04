@@ -1,7 +1,7 @@
 <div class="container-fluid home clearfix">
     <div class="col-lg-offset-2 col-lg-8" >
         <div class="col-xs-12 col-md-offset-1 col-md-4 product-preview clearfix">
-            <img src="assets/img/ibk.png" alt="Photo du produit" class="img-responsive"/>
+            <img src="assets/img/box.png" alt="Photo du produit" class="img-responsive"/>
         </div>
         <div class="col-xs-12 col-md-offset-1 col-md-4 col-lg-offset-3 col-lg-6 concept">
             <h2 class="text-center">Concept</h2>
@@ -24,7 +24,7 @@
 <div class="col-xs-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8" id="description">
     <div class="row">
         <div class="col-xs-12 col-md-4 product-preview clearfix">
-            <img src="assets/img/ibk.png" alt="Photo du produit" class="img-responsive"/>
+            <img src="assets/img/box.png" alt="Photo du produit" class="img-responsive"/>
         </div>
         <div class="col-xs-12 col-md-offset-1 col-md-4 col-lg-offset-3 col-lg-6 description">
             <h2 class="text-center">Description</h2>
