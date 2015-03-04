@@ -37,4 +37,3 @@ if (isset($_POST['pseudo'], $_POST['password']) && !empty($_POST['pseudo']) && !
 }
 
 ?>
->>>>>>> b837e124c6de3494d76801eedb33e6e6ecae0fc9:view/login.php
