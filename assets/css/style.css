@@ -1,5 +1,96 @@
+@font-face {
+    font-family: 'Coolvetica', sans-serif;
+    src: url(../fonts/coolvetica/coolvetica.ttf);
+}
+
+body {
+    line-height:1.333;
+}
+
 .navbar {
+    font-family: 'Coolvetica', sans-serif;
     height:90px;
+    margin:0;
     border-radius: 0;
-    background-color: rgba(200, 200, 200, 1);
+    background-color: #db5b67;
+    box-shadow: 0 5px 1px #b84c56;
+}
+
+.navbar .menu {
+    width: 500px;
+    height:35px;
+    margin: 25px auto;
+    padding:2.5px 0;
+    text-align: center;
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+}
+
+.navbar .menu ul {
+    font-size:0;
+    margin:0;
+    padding:0;
+}
+
+.navbar .menu ul li {
+    width:125px;
+    margin:0;
+    padding:0;
+    display:inline-block;
+    font-size:20px;
+}
+
+.navbar .menu ul li a {
+    color: black;
+}
+
+.navigation {
+    height:40px;
+    margin:0;
+    padding:10px 0 5px;
+    background-color:#ecf0f1;
+}
+
+.home {
+    position:absolute;
+    top:130px;
+    bottom:0;
+    left:0;
+    right:0;
+    background:url('../img/home-bg.png') center center no-repeat;
+    z-index:2;
+}
+
+.home .container {
+    width: 500px;
+    z-index: 200;
+    margin-right:200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    padding: 25px 50px 50px;
+}
+
+.home .product-preview {
+    float:left;
+    background: red;
+}
+
+
+h1, h2, h3, h4 {
+    margin-top:0;
+}
+
+.btn-reset {
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+.btn-primary {
+    width:170px;
+    color:#fff;
+    background-color:#db5b67;
+    float:right;
+    margin:20px 75px 20px 0px;
+    border-radius:5px;
 }

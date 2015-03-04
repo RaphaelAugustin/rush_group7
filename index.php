@@ -24,7 +24,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>Home - takeCar</title>
+    <title>Accueil - Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/flat-ui.min.css" rel="stylesheet">
@@ -37,6 +37,30 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+
+<nav class="navbar">
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="?action=home">Accueil</a>
+            </li>
+            <li>
+                <a href="?action=home">Description</a>
+            </li>
+            <li>
+                <a href="?action=home">Achat</a>
+            </li>
+            <li>
+                <a href="?action=home">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- /.nav -->
+<nav class="navigation">
+    <span class="text-left">Service client <span class="XXXX">GRATUIT</span> 000 000 000</span>
+</nav>
+
 <?php
     require_once('view/'.$action.'.php');
 ?>
