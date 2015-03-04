@@ -21,7 +21,7 @@
     if(isset($_GET['action'])){
         $action = $_GET['action'];
         if(!isset($routing[$action])){
-            $action = 'errors/404';
+            $action = '404';
         }
     } else {
         $action = 'home';
@@ -31,7 +31,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>Accueil - Website</title>
+    <title>noxDuck</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/default.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -46,25 +46,23 @@
 </head>
 <body>
 
-<nav class="navbar">
-    <div class="menu">
-        <ul>
-            <li>
-                <a href="?action=home">Accueil</a>
-            </li>
-            <li>
-                <a href="?action=home">Description</a>
-            </li>
-            <li>
-                <a href="?action=payment">Achat</a>
-            </li>
-            <li>
-                <a href="?action=home">Contact</a>
-            </li>
-        </ul>
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+            <span class="sr-only">Toggle navigation</span>
+        </button>
+        <a class="navbar-brand" href="#">LOOOOOOGOOOO</a>
     </div>
-</nav>
-<!-- /.nav -->
+    <div class="collapse navbar-collapse" id="navbar-collapse-01">
+        <ul class="nav navbar-nav navbar-left">
+            <li><a href="?action=home">Accueil</a></li>
+            <li><a href="?action=home">Description</a></li>
+            <li><a href="?action=payment">Achat</a></li>
+            <li><a href="?action=home">Contact</a></li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav><!-- /navbar -->
+
 <nav class="navigation">
     <span class="text-left">Service client <span class="XXXX">GRATUIT</span> 000 000 000</span>
 </nav>

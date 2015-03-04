@@ -9,16 +9,11 @@ body {
 
 .navbar {
     font-family: 'Coolvetica', sans-serif;
-    height:90px;
     margin:0;
     border-radius: 0;
     background-color: #db5b67;
-    box-shadow: 0 5px 1px #b84c56;
-        -moz-box-shadow: 0 5px 1px #b84c56;
-        -o-box-shadow: 0 5px 1px #b84c56;
-        -webkit-box-shadow: 0 5px 1px #b84c56;
 }
-
+/*
 .navbar .menu {
     width: 500px;
     height:36px;
@@ -46,6 +41,9 @@ body {
 .navbar .menu ul li a {
     color: black;
 }
+*/
+
+
 
 .navigation {
     height:40px;
@@ -60,29 +58,33 @@ body {
         -moz-background-size: cover;
         -o-background-size: cover;
     background-size: cover;
-    padding:0;
+    padding:20px 0;
+    position:relative;
 }
 .container {
-    width: 500px;
+    max-width:520px;
+    width:100%;
+    margin:100px auto;
     padding: 25px 50px;
     background-color: rgba(0, 0, 0, 0.5);
     color: #FFF;
-    position: absolute;
-    top: 50%;
-    right:75px;
-    transform: translate(0, -50%);
+    float:right;
 }
 
 .product-preview {
     width:250px;
     text-align: center;
+    margin:100px auto;
     float:left;
-    margin:100px 5% 100px 10%;
 }
 
 .wrap {
     margin-bottom:40px;
 }
+
+
+
+
 
 
 
@@ -128,6 +130,7 @@ footer {
     text-align:center;
     border-top:2px solid black;
     color:black;
+    background-color: #c8c8c8;
 }
 
 footer a,
