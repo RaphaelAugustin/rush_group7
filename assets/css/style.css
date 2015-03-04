@@ -170,3 +170,9 @@ footer a:focus {
     text-decoration: underline;
     color:black;
 }
+
+
+.textarea {
+    resize: none;
+    height:250px;
+}

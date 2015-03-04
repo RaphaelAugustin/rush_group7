@@ -103,7 +103,7 @@ session_start();
 
 
     <footer>
-        <a href="">mode de paiement</a> - <a href="">mode de livraison</a> - <a href="">qualité de services certifiés</a> - <a href="">contact</a> - <a href="">newsletters</a>
+        <a href="?action=">mode de paiement</a> - <a href="?action=">mode de livraison</a> - <a href="?action=">qualité de services certifiés</a> - <a href="?action=contact">contact</a> - <a href="?action=newsletter">newsletters</a>
     </footer>
 
 <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
