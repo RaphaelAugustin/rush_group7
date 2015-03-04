@@ -1,0 +1,12 @@
+{
+    "name": "TaF/rush_group7",
+    "require": {
+        "stripe/stripe-php": "~2.1"
+    },
+    "authors": [
+        {
+            "name": "RaphaelAugustin",
+            "email": "taf.augustin@gmail.com"
+        }
+    ]
+}
