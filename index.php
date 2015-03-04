@@ -26,8 +26,9 @@
     <meta charset="utf-8">
     <title>Accueil - Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/default.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/flat-ui.min.css" rel="stylesheet">
+    <link href="assets/css/flat-ui.css" rel="stylesheet">
     <link rel="shortcut icon" href="assets/img/favicon.ico">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
@@ -64,6 +65,11 @@
 <?php
     require_once('view/'.$action.'.php');
 ?>
+
+
+<footer>
+    <a href="">mode de paiement</a> - <a href="">mode de livraison</a> - <a href="">qualité de services certifiés</a> - <a href="">contact</a> - <a href="">newsletters</a>
+</footer>
 
 <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
 <script src="assets/js/vendor/jquery.min.js"></script>

@@ -14,13 +14,16 @@ body {
     border-radius: 0;
     background-color: #db5b67;
     box-shadow: 0 5px 1px #b84c56;
+        -moz-box-shadow: 0 5px 1px #b84c56;
+        -o-box-shadow: 0 5px 1px #b84c56;
+        -webkit-box-shadow: 0 5px 1px #b84c56;
 }
 
 .navbar .menu {
     width: 500px;
-    height:35px;
+    height:36px;
     margin: 25px auto;
-    padding:2.5px 0;
+    padding:2px 0;
     text-align: center;
     border-top:2px solid black;
     border-bottom:2px solid black;
@@ -52,32 +55,42 @@ body {
 }
 
 .home {
-    position:absolute;
-    top:130px;
-    bottom:0;
-    left:0;
-    right:0;
-    background:url('../img/home-bg.png') center center no-repeat;
-    z-index:2;
+    background:url('../img/home-bg.png') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    background-size: cover;
+    padding:0;
 }
-
-.home .container {
+.container {
     width: 500px;
-    z-index: 200;
-    margin-right:200px;
+    padding: 25px 50px;
     background-color: rgba(0, 0, 0, 0.5);
     color: #FFF;
-    padding: 25px 50px 50px;
+    position: absolute;
+    top: 50%;
+    right:75px;
+    transform: translate(0, -50%);
 }
 
-.home .product-preview {
+.product-preview {
+    width:250px;
+    text-align: center;
     float:left;
-    background: red;
+    margin:100px 5% 100px 10%;
+}
+
+.wrap {
+    margin-bottom:40px;
 }
 
 
-h1, h2, h3, h4 {
+
+
+h1, h2, h3{
     margin-top:0;
+    text-transform: uppercase;
+
 }
 
 .btn-reset {
@@ -90,7 +103,41 @@ h1, h2, h3, h4 {
     width:170px;
     color:#fff;
     background-color:#db5b67;
-    float:right;
-    margin:20px 75px 20px 0px;
+    margin:20px auto;
     border-radius:5px;
+    text-align: center;
+    border-bottom:3px solid #b84c56;
 }
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color:#b84c56;
+    border-bottom:3px solid #db5b67;
+}
+
+.form-group.focus .form-control, .form-control:focus, .form-group.focus .select2-search input[type="text"], .select2-search input[type="text"]:focus{
+    border-color:#b84c56;
+}
+
+footer {
+    width:100%;
+    height:30px;
+    padding:5px 0;
+    position:fixed;
+    bottom:0;
+    text-align:center;
+    border-top:2px solid black;
+    color:black;
+}
+
+footer a,
+footer a:visited {
+    color:black;
+}
+
+footer a:hover,
+footer a:focus {
+    text-decoration: underline;
+    color:black;
+}
+
