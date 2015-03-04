@@ -16,6 +16,11 @@
             'controller' => 'login',
             'secure' => false,
         ],
+
+        'subscription' => [
+            'controller' => 'subscription',
+            'secure' => false,
+        ],
     ];
 
     if(isset($_GET['action'])){
@@ -51,7 +56,9 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
             <span class="sr-only">Toggle navigation</span>
         </button>
-        <a class="navbar-brand" href="#">LOOOOOOGOOOO</a>
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/logo.png" alt="Logo de noxDuck" class="img-responsive logo"/>
+        </a>
     </div>
     <div class="collapse navbar-collapse" id="navbar-collapse-01">
         <ul class="nav navbar-nav navbar-left">
@@ -59,6 +66,10 @@
             <li><a href="?action=home">Description</a></li>
             <li><a href="?action=payment">Achat</a></li>
             <li><a href="?action=home">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="?action=login"><button>Connexion</button></a></li>
+            <li><a href="?action=registration"><button>Inscription</button></a></li>
         </ul>
     </div><!-- /.navbar-collapse -->
 </nav><!-- /navbar -->

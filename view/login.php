@@ -19,8 +19,3 @@
     <a class="btn btn-primary btn-block" href="#">Log in</a>
     <a class="login-link" href="#">Lost your password?</a>
 </div>
-
-Nom prénom e-mail mot de passe
-S'abo a la newsletter ?
-
-Button submit

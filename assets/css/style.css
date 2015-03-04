@@ -8,42 +8,32 @@ body {
 }
 
 .navbar {
+    height:80px;
     font-family: 'Coolvetica', sans-serif;
     margin:0;
     border-radius: 0;
     background-color: #db5b67;
 }
-/*
-.navbar .menu {
-    width: 500px;
-    height:36px;
-    margin: 25px auto;
-    padding:2px 0;
-    text-align: center;
-    border-top:2px solid black;
-    border-bottom:2px solid black;
+
+.navbar-inverse .navbar-nav {
+    margin:15px 0;
 }
 
-.navbar .menu ul {
-    font-size:0;
-    margin:0;
-    padding:0;
-}
-
-.navbar .menu ul li {
-    width:125px;
-    margin:0;
-    padding:0;
-    display:inline-block;
-    font-size:20px;
-}
-
-.navbar .menu ul li a {
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-nav > li > a:visited{
+    transition: all 0.5s ease 0.25s;
     color: black;
 }
-*/
 
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: white;
+}
 
+.navbar-inverse .navbar-brand .logo {
+    width:80px;
+    margin:-7px;
+}
 
 .navigation {
     height:40px;
@@ -58,7 +48,7 @@ body {
         -moz-background-size: cover;
         -o-background-size: cover;
     background-size: cover;
-    padding:20px 0;
+    padding: 0;
     position:relative;
 }
 .container {
@@ -82,12 +72,9 @@ body {
     margin-bottom:40px;
 }
 
-
-
-
-
-
-
+.login {
+    background:0;
+}
 
 h1, h2, h3{
     margin-top:0;
