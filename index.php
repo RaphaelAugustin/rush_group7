@@ -1,7 +1,14 @@
 <?php
+    require_once "vendor/autoload.php";
+
+
     $routing = [
         'home' => [
             'controller' => 'home',
+            'secure' => false,
+        ],
+        'payment' => [
+            'controller' => 'payment',
             'secure' => false,
         ],
 
@@ -48,7 +55,7 @@
                 <a href="?action=home">Description</a>
             </li>
             <li>
-                <a href="?action=home">Achat</a>
+                <a href="?action=payment">Achat</a>
             </li>
             <li>
                 <a href="?action=home">Contact</a>
