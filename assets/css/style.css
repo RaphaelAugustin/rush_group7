@@ -112,7 +112,7 @@
     float:right;
 }
 
-.description {
+#description {
     max-width:520px;
     width:100%;
     margin:100px auto;
@@ -155,9 +155,21 @@ footer {
     bottom:0;
     text-align:center;
     border-top:2px solid black;
-    color:black;
-    background-color: #c8c8c8;
+    color:white;
+    background-color: #db5b67;
 }
+
+footer a,
+footer a:visited {
+    color:white;
+}
+
+footer a:hover,
+footer a:focus {
+    text-decoration: underline;
+    color:white;
+}
+
 
 a:focus,
 a:hover {
@@ -168,18 +180,6 @@ a:hover {
 .navbar-inverse .navbar-toggle:focus:before {
     color:white;
 }
-
-footer a,
-footer a:visited {
-    color:black;
-}
-
-footer a:hover,
-footer a:focus {
-    text-decoration: underline;
-    color:black;
-}
-
 
 .textarea {
     resize: none;
@@ -322,7 +322,8 @@ label {
 
 .buy-wrap {
     width:900px;
-    margin:50px auto 25px;
+    margin:50px auto 50px;
+
 }
 
 .buy-wrap .buy-ibeacon {
@@ -340,15 +341,22 @@ label {
     color:white;
 }
 
-@media all and (max-width:900px){
+.buy-wrap .buy-ibeacon:last-child {
+    margin-bottom:75px;
+}
 
-    .buy-wrap {
-        width:750px;
-    }
+.buy-wrap .buy-ibeacon button {
+    background-color:#b84c56;
+    border-color:#b84c56;
+    margin:auto;
+    padding:3px 27px;
+    text-align: center;
+    border-radius:5px;
+}
 
-    .buy-wrap .buy-ibeacon {
-        width:250px;
-    }
+.buy-wrap .buy-ibeacon:nth-of-type(2) button {
+    background-color:#db5b67;
+    border-color:#db5b67;
 }
 
 @media all and (max-width:900px){
@@ -361,3 +369,29 @@ label {
         width:250px;
     }
 }
+
+@media all and (max-width:900px){
+    .buy-wrap {
+        width:750px;
+    }
+
+    .buy-wrap .buy-ibeacon {
+        width:250px;
+    }
+}
+
+@media all and (max-width:767px){
+    .buy-wrap {
+        width:auto;
+        margin:50px 20px;
+    }
+
+    .buy-wrap .buy-ibeacon {
+        width:100%;
+    }
+    .buy-wrap .buy-ibeacon:nth-of-type(2) {
+        background-color: #b84c56;
+        padding:20px;
+    }
+}
+

@@ -26,7 +26,7 @@
     <div class="col-xs-12 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8 wrap" id="description">
         <div class="row">
             <div class="col-xs-12 col-sm-4 col-md-offset-1 col-md-4 clearfix">
-                <img src="assets/img/box.png" alt="Photo du produit" class="img-responsive">
+                <img src="assets/img/box.png" alt="Photo du produit" class="img-responsive vcenter">
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-offset-3 col-lg-6 wrap">
                 <h2 class="text-center">Description</h2>
@@ -42,7 +42,7 @@
                 unde omnis iste natus error sit voluptatem accusantium
                 doloremque laudantium, totam rem aperiam, eaque ips.
                 <br />
-                <button class="btn-reset btn-primary buy">Acheter</button>
+                <button class="btn-reset btn-primary" onclick="document.location.href='?action=buy';">Acheter</button>
             </div>
         </div>
     </div>

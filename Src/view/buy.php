@@ -8,6 +8,7 @@
             <li><hr/>Formations sur la technologie</li>
             <li><hr/>Application et Licence pour 1 an</li>
             <li><hr/>Prix : 500€</li>
+            <li><?php require('payment.php');?></li>
         </ul>
     </div>
     <div class="buy-ibeacon">
@@ -19,6 +20,7 @@
             <li><hr/>Formations sur la technologie</li>
             <li><hr/>Application et Licence pour 1 an</li>
             <li><hr/>Prix : a determiner</li>
+            <li><?php require('payment.php');?></li>
         </ul>
     </div>
     <div class="buy-ibeacon">
@@ -30,6 +32,7 @@
             <li><hr/>Formations sur la technologie</li>
             <li><hr/>Application et Licence pour 1 an</li>
             <li><hr/>Prix : a determiner</li>
+            <li><?php require('payment.php');?></li>
         </ul>
     </div>
 </div>
