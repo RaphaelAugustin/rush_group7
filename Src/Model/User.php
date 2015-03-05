@@ -1,5 +1,6 @@
 <?php
-class Users {
+namespace Src\Model;
+class User {
 
     function create_user($login, $pass)
     {

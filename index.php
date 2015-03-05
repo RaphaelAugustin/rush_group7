@@ -6,13 +6,11 @@ session_start();
 <?php
 //require autoloader
     require_once "vendor/autoload.php";
-
-
 //connect to database
     $PDO =new PDO('mysql:host=localhost;dbname=mydb', 'root', '',[
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     ]);
-    $user = new Users($PDO);
+    $user = new Src\Model\User($PDO);
 
 
     $routing = [
@@ -106,7 +104,7 @@ session_start();
     </nav>
 
     <?php
-        require_once('view/'.$action.'.php');
+        require_once('Src/view/'.$action.'.php');
     ?>
 
 
