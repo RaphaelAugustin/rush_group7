@@ -119,6 +119,7 @@
     padding: 25px 50px;
     color: #34495e;
     float:right;
+    background:transparent;
 }
 
 .product-preview {
@@ -395,3 +396,8 @@ label {
     }
 }
 
+
+.noxBox {
+    margin-top:200px;
+    margin-bottom:200px;
+}
