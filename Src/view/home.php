@@ -44,4 +44,19 @@
         </div>
     </div>
 </div>
+
+<div class="col-xs-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8" id="avis">
+    <h2 class="text-center">Description</h2>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut l
+    abore et dolore magna aliqu
+    a. Ut enim ad minim veniam, quis nostrud exercitation u
+    llamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit e
+    sse cillum dolore eu fugiat nulla pariatur. Excepteur sint o
+    ccaecat cupidatat non proident, sunt in culpa qui officia
+    deserunt mollit anim id est laborum. Sed ut perspiciatis
+    unde omnis iste natus error sit voluptatem accusantium
+    doloremque laudantium, totam rem aperiam, eaque ips.
+</div>
 <!-- /.container -->

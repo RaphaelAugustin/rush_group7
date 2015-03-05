@@ -7,10 +7,10 @@ session_start();
 //require autoloader
     require_once "vendor/autoload.php";
 //connect to database
-    $PDO =new PDO('mysql:host=localhost;dbname=mydb', 'root', '',[
+    $PDO =new PDO('mysql:host=localhost;dbname=mydb', 'root', ' ',[
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     ]);
-    $user = new Src\Model\User($PDO);
+//    $user = new Src\Model\User($PDO);
 
 
     $routing = [
@@ -41,6 +41,11 @@ session_start();
 
         'contact' => [
             'controller' => 'contact',
+            'secure' => false,
+        ],
+
+        'newsletter' => [
+            'controller' => 'newletter',
             'secure' => false,
         ],
     ];
@@ -89,6 +94,7 @@ session_start();
             <ul class="nav navbar-nav navbar-right" id="menu">
                 <li><a href="?action=home">Accueil</a></li>
                 <li><a href="?action=home#description">Description</a></li>
+                <li><a href="?action=home#avis">Avis</a></li>
                 <li><a href="?action=buy">Achat</a></li>
                 <li><a href="?action=contact">Contact</a></li>
             </ul>
@@ -109,7 +115,7 @@ session_start();
 
 
     <footer>
-        <a href="?action=">Acheter un Produit</a> - <a href="?action=">qualité de services certifiés</a> - <a href="?action=contact">contact</a> - <a href="?action=newsletter">newsletter</a>
+        <a href="?action=buy">Acheter un Produit</a> - <a href="?action=contact">Contactez-nous</a> - <a href="?action=newsletter">Newsletter</a>
     </footer>
 
     <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->

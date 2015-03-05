@@ -2,21 +2,45 @@
     <h2>Achat</h2>
     <table class="table-bordered table-responsive">
         <thead>
-            <tr>
-                <td>Article</td>
-                <td>Prix unitaire (€)</td>
-                <td>Quantité</td>
-                <td>Total</td>
-            </tr>
+        <tr>
+            <td>Articles</td>
+            <td>Prix unitaire (€)</td>
+            <td>Quantité</td>
+            <td>Total</td>
+        </tr>
         </thead>
         <tbody>
             <tr>
                 <td>
-                    <img src="assets/img/box.png" alt="Borne Bluetooth iBeacon iBKS105" class="logo"/>
+                    <img src="assets/img/lot.png" alt="Borne Bluetooth iBeacon iBKS105 en lot de 3" class="logo"/>
                 </td>
-                <td id="price"></td>
+                <td id="price">400</td>
                 <td>
-                    <input type="number" min="1" max="1000" value="1" id="commandQuantity"/>
+                    <input type="number" min="0" max="1000" value="1" id="commandQuantity"/>
+                </td>
+                <td>
+                    <div id="finalPrice"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="assets/img/lot.png" alt="Borne Bluetooth iBeacon iBKS105 en lot de 5" class="logo"/>
+                </td>
+                <td id="price">500</td>
+                <td>
+                    <input type="number" min="0" max="1000" value="1" id="commandQuantity"/>
+                </td>
+                <td>
+                    <div id="finalPrice"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="assets/img/lot.png" alt="Borne Bluetooth iBeacon iBKS105 en lot de 15" class="logo"/>
+                </td>
+                <td id="price">1 000</td>
+                <td>
+                    <input type="number" min="0" max="1000" value="1" id="commandQuantity"/>
                 </td>
                 <td>
                     <div id="finalPrice"></div>
