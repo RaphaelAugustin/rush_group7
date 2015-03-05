@@ -1,9 +1,7 @@
 <?php
 //begin session
-session_start();
+    session_start();
 
-?>
-<?php
 //require autoloader
     require_once "vendor/autoload.php";
 //connect to database

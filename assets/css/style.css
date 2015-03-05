@@ -316,6 +316,48 @@ label {
 }
 
 
-@media (min-width: 768px){.navbar-right {
+.navbar-right {
     float: none;
-}}
+}
+
+.buy-wrap {
+    width:900px;
+    margin:50px auto 25px;
+}
+
+.buy-wrap .buy-ibeacon {
+    width:300px;
+    background-color:#db5b67;
+    padding:10px;
+    color:white;
+    float:left;
+}
+
+.buy-wrap .buy-ibeacon:nth-of-type(2) {
+    background-color: #b84c56;
+    padding:20px 10px;
+    margin-top:-10px;
+    color:white;
+}
+
+@media all and (max-width:900px){
+
+    .buy-wrap {
+        width:750px;
+    }
+
+    .buy-wrap .buy-ibeacon {
+        width:250px;
+    }
+}
+
+@media all and (max-width:900px){
+
+    .buy-wrap {
+        width:750px;
+    }
+
+    .buy-wrap .buy-ibeacon {
+        width:250px;
+    }
+}
