@@ -2,18 +2,18 @@
     <h2>Connectez-vous</h2>
     <form method="POST" class="form-message">
         <div class="form-group">
-            <input class="form-control login-field" placeholder="Adresse e-mail" type="email">
+            <input class="form-control login-field" placeholder="login" type="text" name="login">
         </div>
         <div class="form-group">
-            <input class="form-control login-field" placeholder="Password" type="password">
+            <input class="form-control login-field" placeholder="password" type="password" name="password">
         </div>
-        <a class="btn btn-primary btn-block" href="#">Connexion</a>
+        <button type="submit" class="btn btn-primary btn-block" href="">Connexion</button>
         <a class="login-link" href="?action=subscription">Vous n'avez pas de compte ? Inscrivez-vous</a>
     </form>
 <?php
     // verify if $_POST variable exist
-    if (isset($_POST['pseudo'], $_POST['password']) && !empty($_POST['pseudo']) && !empty($_POST['password'])) {
-        $user->connect_user($_POST['pseudo'], $_POST['password']);
+    if (isset($_POST['login'], $_POST['password']) && !empty($_POST['login']) && !empty($_POST['password'])) {
+        $user->connect_user($_POST['login'], $_POST['password']);
     } else {
         echo 'Veuillez entrer un pseudo et un mot de passe.';
     }
