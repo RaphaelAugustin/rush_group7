@@ -30,7 +30,7 @@
                 S'abonner à la newsletter
             </label>
         </div>
-        <a class="btn btn-primary btn-block" href="#">Inscription</a>
+        <a class="btn btn-primary btn-block">Inscription</a>
         <a class="login-link" href="?action=login">Déjà un compte ? Connectez-vous</a>
     </form>
     <div id="errorBlock"></div>

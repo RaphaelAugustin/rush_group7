@@ -7,7 +7,7 @@ session_start();
 //require autoloader
     require_once "vendor/autoload.php";
 //connect to database
-    $PDO =new PDO('mysql:host=localhost;dbname=mydb', 'root', ' ',[
+    $PDO =new PDO('mysql:host=localhost;dbname=noxduck', 'root', ' ',[
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     ]);
 //    $user = new Src\Model\User($PDO);
@@ -87,11 +87,7 @@ session_start();
             </a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse-01">
-            <ul class="nav navbar-nav navbar-right">
-                <li><button class="btn-reset btn-primary" id="connexion">Connexion</button></li>
-                <li><button class="btn-reset btn-primary" id="inscription">Inscription</button></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right" id="menu">
+            <ul class="nav navbar-nav navbar-right text-center" id="menu">
                 <li><a href="?action=home">Accueil</a></li>
                 <li><a href="?action=home#description">Description</a></li>
                 <li><a href="?action=home#avis">Avis</a></li>
@@ -99,6 +95,9 @@ session_start();
                 <li><a href="?action=contact">Contact</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
+        <div class="login-space">
+            <a href="?action=login">Connexion</a> - <a href="?action=subscription">Inscription</a>
+        </div>
     </nav><!-- /navbar -->
 
     <nav class="navigation text-center text-uppercase">

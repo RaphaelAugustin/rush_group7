@@ -7,6 +7,10 @@ window.onload = function (){
         document.location.href="?action=login";
     });
 
+    document.getElementsByClassName('btn-reset btn-primary buy').addEventListener('click', function(){
+        document.location.href="?action=buy";
+    });
+
 
 
     /*

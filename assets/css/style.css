@@ -22,7 +22,28 @@
 }
 
 #menu {
-    margin-right:100px;
+    margin:0 auto;
+    float:none;
+}
+
+.nav>li {
+    display: inline-block;
+}
+
+.login-space {
+    width: 200px;
+    height: 25px;
+    margin:auto;
+    background-color: #b84c56;
+    text-align: center;
+    z-index: 11;
+    position: fixed;
+    right: 75px;
+    top:0;
+}
+
+.login-space a {
+    color:#FFF;
 }
 
 .navbar-inverse .navbar-nav > li > a{
@@ -121,7 +142,7 @@
 }
 
 h1, h2, h3{
-    margin-top:0;
+    margin:0;
     text-transform: uppercase;
 
 }
@@ -136,6 +157,16 @@ footer {
     border-top:2px solid black;
     color:black;
     background-color: #c8c8c8;
+}
+
+a:focus,
+a:hover {
+    color:#34495e;
+}
+
+.navbar-inverse .navbar-toggle:hover:before,
+.navbar-inverse .navbar-toggle:focus:before {
+    color:white;
 }
 
 footer a,
@@ -164,7 +195,7 @@ footer a:focus {
 }
 
 label {
-    color:red;
+    color:#34495e;
 }
 
 .btn-primary {
@@ -201,18 +232,90 @@ label {
 @media all and (max-width: 767px){
     .collapse.in {
         display: block;
-        height:400px;
+        height:auto;
         z-index: 100;
         position: absolute;
         top:80px;
         left:0;
         right:0;
-        background-color:red;
     }
 
-    .collapse.in #menu {
-        width: 767px;
-        background-color: green;
+    .collapse.in .navbar-right > li {
+        float:none;
+        display: list-item;
+        border-bottom:2px solid #b84c56;
+        border-top:2px solid #b84c56;
+    }
+
+    .collapse.in .navbar-right > ul {
+        width:100%;
+        margin:0;
+    }
+
+    .collapse.in .navbar-right  {
+        width:100%;
         height:auto;
+        background-color: #db5b67;
+        margin:0 auto;
+        float:left;
+    }
+
+
+    .concept {
+        max-width:520px;
+        width:100%;
+        margin:20px auto;
+        padding: 25px 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #FFF;
+        float:right;
+    }
+
+    .description {
+        max-width:520px;
+        width:100%;
+        margin:20px auto;
+        padding: 25px 50px;
+        color: #34495e;
+    }
+
+    .product-preview {
+        text-align: center;
+        margin-top:20px;
+        margin-bottom:20px;
     }
 }
+
+@media all and (max-width: 767px){
+    .collapse.in,
+    .collapse.in .navbar-right > li > button,
+    .collapse.in .navbar-right + .navbar-right {
+        float:none;
+    }
+
+    .description {
+        max-width:520px;
+        width:100%;
+        margin:20px auto;
+        padding: 25px 50px;
+        color: #34495e;
+    }
+
+    .concept {
+        max-width: 520px;
+        width: 100%;
+        margin: 20px auto;
+        padding: 25px 50px;
+    }
+
+    .product-preview {
+        text-align: center;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+}
+
+
+@media (min-width: 768px){.navbar-right {
+    float: none;
+}}

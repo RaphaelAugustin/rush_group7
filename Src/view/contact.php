@@ -16,7 +16,6 @@
         <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <textarea class="form-control textarea" rows="6" placeholder="Contenu" name="emailContent" required></textarea>
         </div>
-
         <button type="submit" class="btn-reset btn-primary">Envoyer</button>
     </form>
 </div>
