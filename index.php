@@ -7,10 +7,7 @@ session_start();
 //require autoloader
     require_once "vendor/autoload.php";
 //connect to database
-    $PDO =new PDO('mysql:host=localhost;dbname=noxduck', 'root', '',[
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-    ]);
-//    $user = new Src\Model\User($PDO);
+   $user = new Src\Model\User();
 
 
     $routing = [
@@ -110,7 +107,7 @@ session_start();
     </nav>
 
     <?php
-        require_once('Src/view/'.$action.'.php');
+        require('Src/view/'.$action.'.php');
     ?>
 
 
