@@ -29,10 +29,9 @@ class User{
 
         if ($newsletter == 'true') {
             $newsletter = true;
-        } else {
-            $newsletter = false;
         }
-        if ($pass == $pass_check || strlen($login) <= 4 || strlen($pass) <= 6 || !(preg_match('#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#', $mail))) {
+        
+        if ($pass != $pass_check || !(preg_match('#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#', $mail))) {
         echo "information incorrecte, veuillez recommmencez";
          } else {
         //cryptage password en SHA-1 (METTRE A JOUR EN SALT).
