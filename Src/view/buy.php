@@ -3,7 +3,8 @@
         <h3 class="text-center">Lot de 3 iBeacons</h3>
         <ul>
             <li><h4 class="text-center">Contenu du coffret</h4></li>
-            <li>Balise iBeacon (x3) + 1 balise offerte</li>
+            <li>Balise iBeacon (x3)</li>
+            <li>1 balise de paiement offerte</li>
             <li><hr/>S.A.V durant XXX mois/an</li>
             <li><hr/>Formations sur la technologie</li>
             <li><hr/>Application et Licence pour 1 an</li>
@@ -15,7 +16,8 @@
         <h3 class="text-center">Lot de 8 iBeacons</h3>
         <ul>
             <li><h4 class="text-center">Contenu du coffret</h4></li>
-            <li>Balise iBeacon (x8) + 3 balise offerte</li>
+            <li>Balise iBeacon (x8)</li>
+            <li>3 balises de paiement offertes</li>
             <li><hr/>S.A.V durant XXX mois/an</li>
             <li><hr/>Formations sur la technologie</li>
             <li><hr/>Application et Licence pour 1 an</li>
@@ -27,12 +29,13 @@
         <h3 class="text-center">Lot de 15 iBeacons</h3>
         <ul>
             <li><h4 class="text-center">Contenu du coffret</h4></li>
-            <li>Balise iBeacon (x15) + 5 balise offerte</li>
+            <li>Balise iBeacon (x15)</li>
+            <li>5 balises de paiement offertes</li>
             <li><hr/>S.A.V durant XXX mois/an</li>
             <li><hr/>Formations sur la technologie</li>
             <li><hr/>Application et Licence pour 1 an</li>
             <li><hr/>Personnalisation de vos balises</li>
-            <li><hr/>Prix : 800€ </li>
+            <li>Prix : 800€ </li>
             <li><?php require('payment.php');?></li>
         </ul>
     </div>

@@ -132,8 +132,11 @@
     padding:38px 0;
 }
 
-#avis {
-    background-color:#DDD;
+.comments {
+    border:2px solid #b84c56;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .login {

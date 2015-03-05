@@ -1,6 +1,6 @@
 <div class="container-fluid home clearfix">
     <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 clearfix">
+        <div class="col-xs-12 col-sm-3 col-md-4 col-lg-3 clearfix">
             <img src="assets/img/box.png" alt="Photo du produit" class="img-responsive noxBox">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 concept">
@@ -24,7 +24,7 @@
 <!-- /.container home -->
 <div class="container-fluid">
     <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
-        <div class="col-xs-12 col-sm-4 col-md-4 clearfix">
+        <div class="col-xs-12 col-sm-3 col-md-4 clearfix">
             <img src="assets/img/box.png" alt="Photo du produit" class="img-responsive noxBox">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 concept" id="description">
@@ -47,11 +47,28 @@
     <hr/>
     <div class="col-xs-12 wrap" id="avis">
         <h2 class="text-center">Avis</h2>
-        <marquee behavior="" onmouseout="this.stop();" onmouseover="this.start();">
-            coucou
-            coeifoe
-            goekoe
-        </marquee>
+        <div class="row">
+            <div class="col-xs-12 col-sm-offset-1 col-sm-4 comments">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <div class="text-center">- Client</div>
+            </div>
+            <div class="col-xs-12 col-sm-offset-2 col-sm-4 comments">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <div class="text-center">- Client</div>
+            </div>
+            <div class="col-xs-12 col-sm-offset-1 col-sm-4 comments">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <div class="text-center">- Client</div>
+            </div>
+            <div class="col-xs-12 col-sm-offset-2 col-sm-4 comments">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <div class="text-center">- Client</div>
+            </div>
+        </div>
     </div>
 </div>
 <!-- /.container-fluid -->
