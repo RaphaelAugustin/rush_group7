@@ -1,5 +1,5 @@
-<div class="col-xs-offset-2 col-xs-8 col-sm-offset-3 col-sm-6 col-lg-offset-4 col-lg-4 text-center login">
-    <h2>Connectez-vous</h2>
+<div class="col-xs-offset-2 col-xs-8 col-sm-offset-3 col-sm-6 col-lg-offset-4 col-lg-4 text-center wrap">
+    <h2>Inscrivez-vous</h2>
     <form method="POST" class="form-message">
         <div class="form-group">
             <input class="form-control login-field" placeholder="Nom" type="text" name="lastname" />
@@ -27,7 +27,7 @@
             </label>
         </div>
         <a class="btn btn-primary btn-block" href="#">Inscription</a>
-        <a class="login-link" href="#">Mot de passe oublié ?</a>
+        <a class="login-link" href="#">Déjà un compte ? Connectez-vous</a>
     </form>
 <?php
     // verify if $_POST variable exist

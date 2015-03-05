@@ -2,7 +2,7 @@
 *.DS_Store
 Thumbs.db
 *.log
-
+vendor/
 
 ## Directory-based project format:
 .idea/

@@ -20,8 +20,14 @@ session_start();
             'controller' => 'home',
             'secure' => false,
         ],
+
         'payment' => [
             'controller' => 'payment',
+            'secure' => false,
+        ],
+
+        'buy' => [
+            'controller' => 'buy',
             'secure' => false,
         ],
 
@@ -73,7 +79,7 @@ session_start();
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
                 <span class="sr-only">Toggle navigation</span>
             </button>
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="?action=home">
                 <img src="assets/img/logo.png" alt="Logo de noxDuck" class="img-responsive logo"/>
             </a>
         </div>
@@ -82,19 +88,21 @@ session_start();
                 <li><button class="btn-reset btn-primary" id="connexion">Connexion</button></li>
                 <li><button class="btn-reset btn-primary" id="inscription">Inscription</button></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right" style="margin-right: 100px;">
+            <ul class="nav navbar-nav navbar-right" id="menu">
                 <li><a href="?action=home">Accueil</a></li>
                 <li><a href="?action=home#description">Description</a></li>
-                <li><a href="?action=payment">Achat</a></li>
+                <li><a href="?action=buy">Achat</a></li>
                 <li><a href="?action=contact">Contact</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </nav><!-- /navbar -->
 
     <nav class="navigation text-center text-uppercase">
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><span class="text-left">Service client <span class="XXXX">GRATUIT</span></span></div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><span class="text-left">Installation gratuite</span></div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><span class="text-left">Paiement Sécurisé</span></div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><span class="text-left">Service client <span class="primary-color">GRATUIT</span></span></div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><span class="text-left">Installation <span class="primary-color">GRATUITE</span></span></div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><span class="text-left">Paiement Sécurisé</span></div>
+        </div>
     </nav>
 
     <?php
@@ -103,14 +111,14 @@ session_start();
 
 
     <footer>
-        <a href="?action=">mode de paiement</a> - <a href="?action=">mode de livraison</a> - <a href="?action=">qualité de services certifiés</a> - <a href="?action=contact">contact</a> - <a href="?action=newsletter">newsletters</a>
+        <a href="?action=">Acheter un Produit</a> - <a href="?action=">qualité de services certifiés</a> - <a href="?action=contact">contact</a> - <a href="?action=newsletter">newsletter</a>
     </footer>
 
-<!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
-<script src="assets/js/vendor/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="assets/js/vendor/video.js"></script>
-<script src="assets/js/flat-ui.min.js"></script>
-<script src="assets/js/direction.js"></script>
+    <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+    <script src="assets/js/vendor/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/vendor/video.js"></script>
+    <script src="assets/js/flat-ui.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
