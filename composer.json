@@ -8,5 +8,10 @@
             "name": "RaphaelAugustin",
             "email": "taf.augustin@gmail.com"
         }
-    ]
+    ],
+
+  "autoload": {
+
+      "psr-4": {"Src\\": "Src/" }
+  }
 }

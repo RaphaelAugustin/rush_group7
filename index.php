@@ -9,10 +9,10 @@ session_start();
 
 
 //connect to database
-    $PDO =new PDO('mysql:host=localhost;dbname=mydb', 'root', ' ',[
+    $PDO =new PDO('mysql:host=localhost;dbname=mydb', 'root', '',[
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     ]);
-  //  $user = new Users($PDO);
+    $user = new Users($PDO);
 
 
     $routing = [
