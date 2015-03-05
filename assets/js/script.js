@@ -7,11 +7,11 @@ window.onload = function (){
         document.location.href="?action=login";
     });
 
+
+
     /*
     *   Verification of the form for the subscription
     */
-
-
 
     function testEmail(userEmail){
         var userEmail = document.forms['subscribe-form'].elements['userEmail'].value;

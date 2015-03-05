@@ -31,7 +31,7 @@
             </label>
         </div>
         <a class="btn btn-primary btn-block" href="#">Inscription</a>
-        <a class="login-link" href="#">Déjà un compte ? Connectez-vous</a>
+        <a class="login-link" href="?action=login">Déjà un compte ? Connectez-vous</a>
     </form>
     <div id="errorBlock"></div>
     <div id="successBlock"></div>
@@ -44,5 +44,4 @@
     }
 
 ?>
-
 </div>

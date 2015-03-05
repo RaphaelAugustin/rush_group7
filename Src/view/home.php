@@ -44,8 +44,8 @@
         </div>
     </div>
 </div>
-
-<div class="col-xs-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8" id="avis">
+<hr/>
+<div class="col-xs-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8 wrap" id="avis">
     <h2 class="text-center">Description</h2>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
     sed do eiusmod tempor incididunt ut l

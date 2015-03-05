@@ -3,10 +3,6 @@
     src: url(../fonts/coolvetica/coolvetica.ttf);
 }
 
-body {
-    line-height:1.333;
-}
-
 .navbar {
     height:80px;
     font-family: 'Coolvetica', sans-serif;
@@ -105,15 +101,13 @@ body {
 }
 
 .product-preview {
-    width:250px;
     text-align: center;
-    margin:100px auto;
-    float:left;
+    margin-top:150px;
+    margin-bottom:150px;
 }
 
 .wrap {
     padding:38px 0;
-
 }
 
 #avis {
@@ -130,40 +124,6 @@ h1, h2, h3{
     margin-top:0;
     text-transform: uppercase;
 
-}
-
-.btn-reset {
-    padding: 0;
-    border: 0;
-    background: transparent;
-}
-
-.btn-primary {
-    width:170px;
-    color:#fff;
-    background-color:#db5b67;
-    margin:20px auto;
-    border-radius:5px;
-    text-align: center;
-    border-bottom:3px solid #b84c56;
-}
-
-.btn-primary:hover,
-.btn-primary:focus {
-    background-color:#b84c56;
-    border-bottom:3px solid #db5b67;
-}
-.checkbox input.custom-checkbox[type="checkbox"]:checked + .icons .icon-checked,
-.radio input.custom-checkbox[type="checkbox"]:checked + .icons .icon-checked,
-.checkbox input.custom-radio[type="radio"]:checked + .icons .icon-checked,
-.radio input.custom-radio[type="radio"]:checked + .icons .icon-checked {
-    color: #db5b67;
-}
-.form-group.focus .form-control,
-.form-control:focus,
-.form-group.focus .select2-search input[type="text"],
-.select2-search input[type="text"]:focus {
-    border-color:#b84c56;
 }
 
 footer {
@@ -205,4 +165,54 @@ footer a:focus {
 
 label {
     color:red;
+}
+
+.btn-primary {
+    width:170px;
+    color:#fff;
+    background-color:#db5b67;
+    margin:20px auto;
+    border-radius:5px;
+    text-align: center;
+    border-bottom:3px solid #b84c56;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color:#b84c56;
+    border-bottom:3px solid #db5b67;
+}
+.checkbox input.custom-checkbox[type="checkbox"]:checked + .icons .icon-checked,
+.radio input.custom-checkbox[type="checkbox"]:checked + .icons .icon-checked,
+.checkbox input.custom-radio[type="radio"]:checked + .icons .icon-checked,
+.radio input.custom-radio[type="radio"]:checked + .icons .icon-checked {
+    color: #db5b67;
+}
+.form-group.focus .form-control,
+.form-control:focus,
+.form-group.focus .select2-search input[type="text"],
+.select2-search input[type="text"]:focus {
+    border-color:#b84c56;
+}
+
+
+
+
+@media all and (max-width: 767px){
+    .collapse.in {
+        display: block;
+        height:400px;
+        z-index: 100;
+        position: absolute;
+        top:80px;
+        left:0;
+        right:0;
+        background-color:red;
+    }
+
+    .collapse.in #menu {
+        width: 767px;
+        background-color: green;
+        height:auto;
+    }
 }
