@@ -43,8 +43,14 @@
     // verify if $_POST variable exist
     if (isset($_POST['login'], $_POST['pwd'], $_POST['pwdCheck'], $_POST['nickname'], $_POST['lastname'], $_POST['society'], $_POST['userEmail'])
         && !empty($_POST['login']) && !empty($_POST['pwdCheck']) && !empty($_POST['nickname']) && !empty($_POST['lastname']) && !empty($_POST['society']) && !empty($_POST['userEmail'])) {
-        $user->create_user($_POST['login'], $_POST['pwd'], $_POST['pwdCheck'], $_POST['nickname'], $_POST['lastname'], $_POST['society'],$_POST['userEmail'], $_POST['newsletter']);
-    } else {
+        if (isset($_POST['newsletter'])) {
+            $user->create_user($_POST['login'], $_POST['pwd'], $_POST['pwdCheck'], $_POST['nickname'],
+                $_POST['lastname'], $_POST['society'], $_POST['userEmail'], $_POST['newsletter']);
+        } else {
+            $user->create_user($_POST['login'], $_POST['pwd'], $_POST['pwdCheck'], $_POST['nickname'],
+                $_POST['lastname'], $_POST['society'], $_POST['userEmail'], false);
+        }
+        } else {
         echo 'Veuillez entrer un pseudo et un mot de passe.';
     }
 
