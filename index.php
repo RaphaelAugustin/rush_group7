@@ -7,11 +7,7 @@ session_start();
 //require autoloader
     require_once "vendor/autoload.php";
 //connect to database
-<<<<<<< HEAD
     $PDO =new PDO('mysql:host=localhost;dbname=noxduck', 'root', '',[
-=======
-    $PDO =new PDO('mysql:host=localhost;dbname=mydb', 'root', ' ',[
->>>>>>> e957b3771ad9b4744f81949b87f6f6021f83bd40
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     ]);
 //    $user = new Src\Model\User($PDO);
