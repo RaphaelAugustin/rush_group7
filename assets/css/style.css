@@ -100,7 +100,7 @@ body {
     width:100%;
     margin:100px auto;
     padding: 25px 50px;
-    color: black;
+    color: #34495e;
     float:right;
 }
 
@@ -116,10 +116,14 @@ body {
 
 }
 
+#avis {
+    background-color:#DDD;
+}
+
 .login {
     padding:38px 0;
     background:0;
-    color:black;
+    color:#34495e;
 }
 
 h1, h2, h3{
@@ -197,4 +201,8 @@ footer a:focus {
 
 .row {
     margin:0;
+}
+
+label {
+    color:red;
 }
