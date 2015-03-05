@@ -35,6 +35,7 @@
         </div>
         <button type="submit" class="btn-reset btn-primary">Inscription</button>
         <a class="login-link" href="#">Déjà un compte ? Connectez-vous</a>
+
     </form>
     <div id="errorBlock"></div>
     <div id="successBlock"></div>
@@ -48,5 +49,4 @@
     }
 
 ?>
-
 </div>

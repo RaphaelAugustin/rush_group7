@@ -7,11 +7,15 @@ window.onload = function (){
         document.location.href="?action=login";
     });
 
+    document.getElementsByClassName('btn-reset btn-primary buy').addEventListener('click', function(){
+        document.location.href="?action=buy";
+    });
+
+
+
     /*
     *   Verification of the form for the subscription
     */
-
-
 
     function testEmail(userEmail){
         var userEmail = document.forms['subscribe-form'].elements['userEmail'].value;

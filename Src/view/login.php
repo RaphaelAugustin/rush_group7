@@ -2,13 +2,13 @@
     <h2>Connectez-vous</h2>
     <form method="POST" class="form-message">
         <div class="form-group">
-            <input class="form-control login-field" value="" placeholder="Adresse e-mail" type="email">
+            <input class="form-control login-field" placeholder="Adresse e-mail" type="email">
         </div>
         <div class="form-group">
-            <input class="form-control login-field" value="" placeholder="Password" type="password">
+            <input class="form-control login-field" placeholder="Password" type="password">
         </div>
         <a class="btn btn-primary btn-block" href="#">Connexion</a>
-        <a class="login-link" href="#">Vous n'avez pas de compte ? Connectez-vous</a>
+        <a class="login-link" href="?action=subscription">Vous n'avez pas de compte ? Inscrivez-vous</a>
     </form>
 <?php
     // verify if $_POST variable exist
@@ -19,5 +19,4 @@
     }
 
 ?>
-
 </div>

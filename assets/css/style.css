@@ -3,10 +3,6 @@
     src: url(../fonts/coolvetica/coolvetica.ttf);
 }
 
-body {
-    line-height:1.333;
-}
-
 .navbar {
     height:80px;
     font-family: 'Coolvetica', sans-serif;
@@ -26,7 +22,28 @@ body {
 }
 
 #menu {
-    margin-right:100px;
+    margin:0 auto;
+    float:none;
+}
+
+.nav>li {
+    display: inline-block;
+}
+
+.login-space {
+    width: 200px;
+    height: 25px;
+    margin:auto;
+    background-color: #b84c56;
+    text-align: center;
+    z-index: 11;
+    position: fixed;
+    right: 75px;
+    top:0;
+}
+
+.login-space a {
+    color:#FFF;
 }
 
 .navbar-inverse .navbar-nav > li > a{
@@ -105,15 +122,13 @@ body {
 }
 
 .product-preview {
-    width:250px;
     text-align: center;
-    margin:100px auto;
-    float:left;
+    margin-top:150px;
+    margin-bottom:150px;
 }
 
 .wrap {
     padding:38px 0;
-
 }
 
 #avis {
@@ -127,15 +142,60 @@ body {
 }
 
 h1, h2, h3{
-    margin-top:0;
+    margin:0;
     text-transform: uppercase;
 
 }
 
-.btn-reset {
-    padding: 0;
-    border: 0;
-    background: transparent;
+footer {
+    width:100%;
+    height:30px;
+    padding:5px 0;
+    position:fixed;
+    bottom:0;
+    text-align:center;
+    border-top:2px solid black;
+    color:black;
+    background-color: #c8c8c8;
+}
+
+a:focus,
+a:hover {
+    color:#34495e;
+}
+
+.navbar-inverse .navbar-toggle:hover:before,
+.navbar-inverse .navbar-toggle:focus:before {
+    color:white;
+}
+
+footer a,
+footer a:visited {
+    color:black;
+}
+
+footer a:hover,
+footer a:focus {
+    text-decoration: underline;
+    color:black;
+}
+
+
+.textarea {
+    resize: none;
+    height:250px;
+}
+
+.primary-color {
+    color:#db5b67;
+}
+
+.row {
+    margin:0;
+}
+
+label {
+    color:#34495e;
 }
 
 .btn-primary {
@@ -166,43 +226,96 @@ h1, h2, h3{
     border-color:#b84c56;
 }
 
-footer {
-    width:100%;
-    height:30px;
-    padding:5px 0;
-    position:fixed;
-    bottom:0;
-    text-align:center;
-    border-top:2px solid black;
-    color:black;
-    background-color: #c8c8c8;
-}
-
-footer a,
-footer a:visited {
-    color:black;
-}
-
-footer a:hover,
-footer a:focus {
-    text-decoration: underline;
-    color:black;
-}
 
 
-.textarea {
-    resize: none;
-    height:250px;
+
+@media all and (max-width: 767px){
+    .collapse.in {
+        display: block;
+        height:auto;
+        z-index: 100;
+        position: absolute;
+        top:80px;
+        left:0;
+        right:0;
+    }
+
+    .collapse.in .navbar-right > li {
+        float:none;
+        display: list-item;
+        border-bottom:2px solid #b84c56;
+        border-top:2px solid #b84c56;
+    }
+
+    .collapse.in .navbar-right > ul {
+        width:100%;
+        margin:0;
+    }
+
+    .collapse.in .navbar-right  {
+        width:100%;
+        height:auto;
+        background-color: #db5b67;
+        margin:0 auto;
+        float:left;
+    }
+
+
+    .concept {
+        max-width:520px;
+        width:100%;
+        margin:20px auto;
+        padding: 25px 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #FFF;
+        float:right;
+    }
+
+    .description {
+        max-width:520px;
+        width:100%;
+        margin:20px auto;
+        padding: 25px 50px;
+        color: #34495e;
+    }
+
+    .product-preview {
+        text-align: center;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
 }
 
-.primary-color {
-    color:#db5b67;
+@media all and (max-width: 767px){
+    .collapse.in,
+    .collapse.in .navbar-right > li > button,
+    .collapse.in .navbar-right + .navbar-right {
+        float:none;
+    }
+
+    .description {
+        max-width:520px;
+        width:100%;
+        margin:20px auto;
+        padding: 25px 50px;
+        color: #34495e;
+    }
+
+    .concept {
+        max-width: 520px;
+        width: 100%;
+        margin: 20px auto;
+        padding: 25px 50px;
+    }
+
+    .product-preview {
+        text-align: center;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
 }
 
-.row {
-    margin:0;
-}
 
-label {
-    color:red;
-}
+@media (min-width: 768px){.navbar-right {
+    float: none;
+}}
