@@ -5,7 +5,7 @@
 //require autoloader
     require_once "vendor/autoload.php";
 //connect to database
-//   $user = new Src\Model\User();
+   $user = new Src\Model\User();
 
 //  $user = new Src\Model\User($PDO);
 
@@ -29,6 +29,10 @@
         'login' => [
             'controller' => 'login',
             'secure' => false,
+        ],
+        'logout' => [
+            'controller' => 'logout',
+            'secure' => true,
         ],
 
         'subscription' => [
@@ -93,7 +97,15 @@
             </ul>
         </div><!-- /.navbar-collapse -->
         <div class="login-space">
-            <a href="?action=login">Connexion</a> - <a href="?action=subscription">Inscription</a>
+            <?php
+                if (isset($_SESSION['login'])) {
+                    echo '<a href="?action=">' . $_SESSION['login'] . '</a> - <a href="?action=logout">Deconnexion</a>';
+                } else {
+                    echo '<a href="?action=login">Connexion</a> - <a href="?action=subscription">Inscription</a>';
+
+                }
+
+                ?>
         </div>
     </nav><!-- /navbar -->
 
