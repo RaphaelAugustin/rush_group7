@@ -2,39 +2,50 @@
 namespace Src\Model;
 class User {
 
-    function create_user($login, $pass)
+    function create_user($login, $pass, $pass_check, $first_name, $last_name, $society_name, $mail, $newsletter)
     {
 
         //requete pour recupéré les info des comptes.
-        $response = $this->bdd->query('SELECT pseudo FROM users');
+        $response = $this->bdd->query('SELECT * FROM users');
 
 
-        //verify if username already exist.
+        //verify if mails already exist.
         while ($data = $response->fetch()) {
             foreach ($data AS $user) {
-                if ($user == $login) {
-                    echo "Ce nom d'utilisateur existe déjà. Veuillez en choisir un autre.";
+                if ($user['mail'] == $mail && $user['account'] == true) {
+                    echo "Un compte existe déja avec cette adresse mail.";
                     exit;
                 }
             }
         }
-        //cryptage password en SHA-1 (METTRE A JOUR EN SELL).
+
+
+       if ($pass == $pass_check || strlen($login) <= 4 || strlen($pass) <= 6 || !(preg_match('#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#', $mail))) {
+           echo "information incorrecte, veuillez recommmencez";
+           exit;
+       }
+        //cryptage password en SHA-1 (METTRE A JOUR EN SALT).
 
         $password_crypt = sha1($pass);
 
 
         //requete preparé et exécution pour add pseudo et password dans la BDD.
-        $req = $this->bdd->prepare("INSERT INTO users (pseudo, password) VALUES (:pseudo, :password)");
+        $req = $this->bdd->prepare("INSERT INTO users (pseudo, password, mail, name, last_name, society_name, newsletter, account) VALUES (:pseudo, :password, :mail, :name, :last_name, :society_name, :newsletter, :account)");
 
         //bind des paramètre pour que SQL fasse les vérification de validité des chaine envoyées.
 
         $req->execute([
             'pseudo' => $login,
             'password' => $password_crypt,
+            'mail' => $mail,
+            'name' => $first_name,
+            'last_name' => $last_name,
+            'society_name' => $society_name,
+            'newsletter' => $newsletter,
+            'account' => true
         ]);
 
         echo "Votre compte à été crée";
-
 
     }
 
