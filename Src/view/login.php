@@ -13,7 +13,13 @@
 <?php
     // verify if $_POST variable exist
     if (isset($_POST['login'], $_POST['password']) && !empty($_POST['login']) && !empty($_POST['password'])) {
-        $user->connect_user($_POST['login'], $_POST['password']);
+        if ($user->connect_user($_POST['login'], $_POST['password'])) {
+
+            $_SESSION['login'] = $_POST['login'];
+            header('Location: ./index.php?page=home');
+        } else {
+            echo "erreur d'authentification";
+        }
     } else {
         echo 'Veuillez entrer un pseudo et un mot de passe.';
     }

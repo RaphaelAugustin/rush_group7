@@ -76,15 +76,14 @@ class User
 
         //verify if mails already exist.
         while ($data = $response->fetch()) {
-            var_dump($data);
             if ($data['login'] == $login && $password_crypt == $data['password']) {
-                $_SESSION['login'] = $data['login'];
-                echo "Bienvenue, vous êtes connecté";
+
+                return true;
                 break;
             }
 
         }
-        var_dump($_SESSION['login']);
-        echo "erreur d'authentification";
+        return false;
+
     }
 }

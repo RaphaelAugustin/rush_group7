@@ -5,9 +5,7 @@
 //require autoloader
     require_once "vendor/autoload.php";
 //connect to database
-//   $user = new Src\Model\User();
-
-//  $user = new Src\Model\User($PDO);
+   $user = new Src\Model\User();
 
 
     $routing = [
