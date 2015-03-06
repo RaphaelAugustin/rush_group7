@@ -17,7 +17,7 @@
             unde omnis iste natus error sit voluptatem accusantium
             doloremque laudantium, totam rem aperiam, eaque ips.
             <br>
-            <button class="btn-reset btn-primary" id="buy-concept">Acheter</button>
+            <button class="btn-reset btn-primary" id="buyConcept">Acheter</button>
         </div>
     </div>
 </div>
@@ -28,7 +28,7 @@
             <img src="assets/img/box.png" alt="Photo du produit" class="img-responsive noxBox">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 concept" id="description">
-            <h2 class="text-center">Concept</h2>
+            <h2 class="text-center">Description</h2>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
             sed do eiusmod tempor incididunt ut l
             abore et dolore magna aliqu
@@ -41,7 +41,7 @@
             unde omnis iste natus error sit voluptatem accusantium
             doloremque laudantium, totam rem aperiam, eaque ips.
             <br>
-            <button class="btn-reset btn-primary" id="buy-description">Acheter</button>
+            <button class="btn-reset btn-primary buy" id="buyDescription">Acheter</button>
         </div>
     </div>
     <hr/>

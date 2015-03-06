@@ -1,0 +1,7 @@
+AuthName "Page d'administration protégée"
+
+AuthType Basic
+
+AuthUserFile "C:\Users\Administrateur\hubiC\Sup_internet\rush_groupe7\rush_group7\admin\.htpasswd"
+
+Require valid-user

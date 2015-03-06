@@ -1,16 +1,10 @@
 window.onload = function (){
-    document.getElementById('inscription').addEventListener('click', function(){
-        document.location.href="?action=subscription";
-    });
 
-    document.getElementById('connexion').addEventListener('click', function(){
-        document.location.href="?action=login";
-    });
-
-    document.getElementById('buy-description').onclick = function(){
+    document.getElementById('buyDescription').addEventListener('click', function(){
         document.location.href="?action=buy";
     });
-    document.getElementById('buy-concept').addEventListener('click', function(){
+
+    document.getElementById('buyConcept').addEventListener('click', function(){
         document.location.href="?action=buy";
     });
 

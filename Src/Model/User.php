@@ -21,9 +21,15 @@ class User
             if ($data['mail'] == $mail && $data['account'] == 1) {
                 echo "Un compte existe déja avec cette adresse mail.";
                 break;
+            //supression dans la base de donnée si l'email était connu du a l'inscription sans compte à la newsletter.
+            } else if ($data['mail'] == $mail && $data['account'] == 0) {
+                $req = $PDO->prepare('DELETE FROM users WHERE mail = ?');
+                $req->execute([
+                  '0' => $mail,
+                ]);
+
 
             }
-
         }
 
         if ($newsletter == 'true') {
@@ -76,15 +82,32 @@ class User
 
         //verify if mails already exist.
         while ($data = $response->fetch()) {
-            var_dump($data);
             if ($data['login'] == $login && $password_crypt == $data['password']) {
-                $_SESSION['login'] = $data['login'];
-                echo "Bienvenue, vous êtes connecté";
+
+                return true;
                 break;
             }
 
         }
-        var_dump($_SESSION['login']);
-        echo "erreur d'authentification";
+        return false;
+
     }
+
+    function clean_db() {
+        $PDO = new PDO('mysql:host=localhost;dbname=noxduck', 'root', '', [
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+        ]);
+
+                $PDO->query('DELETE users
+                            FROM users
+                            LEFT OUTER JOIN (
+                                    SELECT account as account, field1, field2
+                                    FROM users
+                                    GROUP BY field1, field2
+                                ) AS table_1
+                                ON users.mail = table_1.mail
+                            WHERE table_1.account IS NULL');
+
+
+        }
 }
