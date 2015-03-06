@@ -17,7 +17,7 @@
             unde omnis iste natus error sit voluptatem accusantium
             doloremque laudantium, totam rem aperiam, eaque ips.
             <br>
-            <button class="btn-reset btn-primary buy">Acheter</button>
+            <button class="btn-reset btn-primary" id="buy-concept">Acheter</button>
         </div>
     </div>
 </div>
@@ -41,7 +41,7 @@
             unde omnis iste natus error sit voluptatem accusantium
             doloremque laudantium, totam rem aperiam, eaque ips.
             <br>
-            <button class="btn-reset btn-primary buy">Acheter</button>
+            <button class="btn-reset btn-primary" id="buy-description">Acheter</button>
         </div>
     </div>
     <hr/>

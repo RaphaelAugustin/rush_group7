@@ -7,7 +7,10 @@ window.onload = function (){
         document.location.href="?action=login";
     });
 
-    document.getElementsByClassName('btn-reset btn-primary buy').addEventListener('click', function(){
+    document.getElementById('buy-description').onclick = function(){
+        document.location.href="?action=buy";
+    });
+    document.getElementById('buy-concept').addEventListener('click', function(){
         document.location.href="?action=buy";
     });
 
