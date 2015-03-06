@@ -7,3 +7,17 @@
         <button type="submit" class="btn-reset btn-primary">Envoyer</button>
     </form>
 </div>
+
+
+<?php
+
+if (isset($_POST['userEmail']) && preg_match('#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#', $_POST['userEmail'])) {
+    if ($newsletter->add_new_mail($_POST['userEmail'])) {
+        echo '<br>votre Email à bien été ajouté à la newsletter.';
+    } else {
+        echo '<br>Vous êtes déja inscrit à notre newsletter.';
+    }
+
+}
+
+?>
