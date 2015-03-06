@@ -14,7 +14,7 @@ class Newsletter
 
     function add_new_mail($mail)
     {
-        $PDO = new PDO('mysql:host=localhost;dbname=noxduck', 'root', '', [
+        $PDO = new PDO('mysql:host=localhost;dbname=noxduck', 'root', ' ', [
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
         ]);
 

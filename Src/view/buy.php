@@ -5,10 +5,9 @@
             <li><h4 class="text-center">Contenu du coffret</h4></li>
             <li>Balise iBeacon (x3)</li>
             <li>1 balise de paiement offerte</li>
-            <li><hr/>S.A.V durant XXX mois/an</li>
             <li><hr/>Formations sur la technologie</li>
             <li><hr/>Application et Licence pour 1 an</li>
-            <li><hr/>Prix : 500€</li>
+            <li><hr/>Prix : 650€</li>
             <li><?php require('payment.php');?></li>
         </ul>
     </div>
@@ -18,10 +17,9 @@
             <li><h4 class="text-center">Contenu du coffret</h4></li>
             <li>Balise iBeacon (x8)</li>
             <li>3 balises de paiement offertes</li>
-            <li><hr/>S.A.V durant XXX mois/an</li>
             <li><hr/>Formations sur la technologie</li>
             <li><hr/>Application et Licence pour 1 an</li>
-            <li><hr/>Prix : 600€</li>
+            <li><hr/>Prix : 850€</li>
             <li><?php require('payment.php');?></li>
         </ul>
     </div>
@@ -31,14 +29,11 @@
             <li><h4 class="text-center">Contenu du coffret</h4></li>
             <li>Balise iBeacon (x15)</li>
             <li>5 balises de paiement offertes</li>
-            <li><hr/>S.A.V durant XXX mois/an</li>
             <li><hr/>Formations sur la technologie</li>
             <li><hr/>Application et Licence pour 1 an</li>
             <li><hr/>Personnalisation de vos balises</li>
-            <li>Prix : 800€ </li>
+            <li>Prix : 1 300€ </li>
             <li><?php require('payment.php');?></li>
         </ul>
     </div>
 </div>
-
-<!-- SAV + FORMATEUR -->

@@ -8,6 +8,18 @@ window.onload = function (){
         document.location.href="?action=buy";
     });
 
+    document.getElementById('showMore').addEventListener('click', function(){
+        document.getElementById('textMore').style.display = 'block';
+        document.getElementById('hideText').style.display = 'inline-block';
+        document.getElementById('showMore').style.display = 'none';
+    });
+
+    document.getElementById('hideText').addEventListener('click', function(){
+        document.getElementById('textMore').style.display = 'none';
+        document.getElementById('showMore').style.display = 'inline-block';
+        document.getElementById('hideText').style.display = 'none';
+    });
+
 
     /*
     *   Verification of the form for the subscription

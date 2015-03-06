@@ -404,3 +404,8 @@ label {
     margin-top:200px;
     margin-bottom:200px;
 }
+
+#textMore,
+#hideText {
+    display: none;
+}

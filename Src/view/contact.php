@@ -18,44 +18,50 @@
         </div>
         <button type="submit" class="btn-reset btn-primary">Envoyer</button>
     </form>
-    <?php
-    @$lastname = htmlentities($_POST['lastname']);
-    @$nickname = htmlentities($_POST['nickname']);
-    @$object = htmlentities($_POST['object']);
-    @$userEmail = htmlentities($_POST['userEmail']);
-    @$emailContent = htmlentities($_POST['emailContent']);
+<?php
+
+    if(isset($_POST['lastname'], $_POST['nickname'], $_POST['object'], $_POST['userEmail'], $_POST['emailContent'])) {
+
+        $lastname = htmlentities($_POST['lastname']);
+        $nickname = htmlentities($_POST['nickname']);
+        $object = htmlentities($_POST['object']);
+        $userEmail = htmlentities($_POST['userEmail']);
+        $emailContent = htmlentities($_POST['emailContent']);
+
+        // Create the Transport
+        $transport = Swift_SmtpTransport::newInstance('smtp.office365.com', 587, "tls")
+            ->setUsername('raphael.augustin@supinternet.fr')
+            //mettre les identifiant correct.
+            ->setPassword('');
 
 
-    $destinataire = 'localhost@awh.fr'; // Déclaration de l'adresse de destination.
+        /*
+        You could alternatively use a different transport such as Sendmail or Mail:
 
-    if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $userEmail))
-    {
-        $passage_ligne = "\r\n";
-    }
-    else
-    {
-        $passage_ligne = "\n";
-    }
+        // Sendmail
+        $transport = Swift_SendmailTransport::newInstance('/usr/sbin/sendmail -bs');
 
-    //=====Création du header de l'e-mail.
-    $header = "From: ".$userEmail.$passage_ligne;
-    $header.= "Reply-to: ".$userEmail.$passage_ligne;
-    $header.= "MIME-Version: 1.0";
-    $header.= "Content-Type: multipart/alternative;".$passage_ligne;
-    //==========
 
-    //=====Ajout du message au format texte.
-    $message = $passage_ligne.$emailContent.$passage_ligne;
-    //==========
+        // Mail
+        $transport = Swift_MailTransport::newInstance();
+        */
 
-    //=====Envoi de l'e-mail.
-    if(strlen($emailContent) > 0){
-        mail($destinataire,$object,$message,$header);
-        if(mail($destinataire,$object,$message,$header) === true){
-            echo 'Message envoyé';
-        }else {
-            echo 'Une erreur est survenue lors de l\'envoi du mail';
-        }
+        // Create the Mailer using your created Transport
+        $mailer = Swift_Mailer::newInstance($transport);
+
+        // Create the message
+        $message = Swift_Message::newInstance()
+            // Give the message a subject
+            ->setSubject($object)
+            // Set the From address with an associative array
+            ->setFrom(array($userEmail))
+            // Set the To addresses with an associative array
+            ->setTo(array('raphael.augustin@supinternet.fr'))
+            // Give it a body
+            ->setBody($emailContent);
+
+        // Send the message
+        $result = $mailer->send($message);
     }
     ?>
 </div>
