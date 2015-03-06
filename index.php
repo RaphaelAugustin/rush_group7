@@ -5,8 +5,8 @@
 //require autoloader
     require_once "vendor/autoload.php";
 //connect to database
-// $user = new Src\Model\User();
-// $newsletter = new Src\Model\Newsletter();
+ $user = new Src\Model\User();
+ $newsletter = new Src\Model\Newsletter();
 
     $routing = [
         'home' => [
